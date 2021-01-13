@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litros gastos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo ds quantidade de listros gastos</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um automóvel que faz 12 km por litro. <br> Para obter o cálculo, o usuário deve fornecer o tempo gasto (variável TEMPO) e a velocidade média (variável VELOCIDADE) durante a viagem. Desta forma, será possível obter a distância percorrida com a fórmula DISTÂNCIA = TEMPO * VELOCIDADE. Dessa forma, será possível obter a distância percorrida com a fórmula DISTÂNCIA = TEMPO * VELOCIDADE. A partir do valor da distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula LITROS_USADOS = DISTÂNCIA / 12. O programa deve apresentar os valores da velocidade média, tempo gasto na viagem, a distância percorrida e a quantidade de litros utilizada na viagem.
+            </p>
+            <p>Tempo:
+                <input type="number" name="txtt" id="txtt"> h
+            </p>
+            <p>Velocidade:
+                <input type="number" name="txtv" id="txtv"> km
+            </p>
+            <p>
+                <input type="button" value="Calcular"  onclick="calcular()">
+            </p>
+        </div>
+        <div id="res">
+            Resultado: 
+        </div>
+    </section>
+    <footer>
+        <p>&copy;DanielleTorres</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

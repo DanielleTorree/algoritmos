@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device=width-initial-scale=1.0">
+    <title>Conversão de temperatura</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de temperatura</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <input type="number" name="txtnf" id="txtnf">
+                <input type="button" value="Converte em Celsius" onclick="converteC()">
+            </p>
+        </div>
+        <div id="res1">
+            Resultado de °F em °C:
+        </div><br>
+        <div>
+            <input type="number" name="txtnc" id="txtnc">
+            <input type="button" value="Converte em Fahrenheit" onclick="converteF()">
+        </div><br>
+        <div id="res2">
+            Resultado de °C em °F:
+        </div>
+    </section>
+    <footer>
+        <p>&copy;DanielleTorres</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
