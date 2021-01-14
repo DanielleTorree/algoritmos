@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Valores Numéricos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Soma e multiplicação de quatro <br> valores numéricos</h1>
+    </header>
+    <section>
+        <div>
+            <p>Valor A:
+                <input type="number" name="txta" id="txta">
+            </p>
+            <p>Valor B:
+                <input type="number" name="txtb" id="txtb">
+            </p>
+            <p>Valor C:
+                <input type="number" name="txtc" id="txtc">
+            </p>
+            <p>Valor D:
+                <input type="number" name="txtd" id="txtd">
+            </p>
+            <p>
+                <input type="radio" name="radCalc" id="somar" checked>
+                <label for="somar">Somar</label>
+                <input type="radio" name="radCalc" id="multiplicar">
+                <label for="multiplicar">Multiplicar</label>
+            </p>
+            <p>
+                <input type="button" value="Resultado" onclick="resultado()">
+            </p>
+        </div>
+        <div id="resolucao">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy;DanielleTorres</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
