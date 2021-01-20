@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Dinheiro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Dinheiro</h1>
+    </header>
+    <section>
+        <div>
+            <p>1 Dólar americano = 
+                <input type="number" name="txtDER" id="txtDER">
+                Real brasileiro
+            </p>
+            <p>
+                <input type="button" value="Confirmar" onclick="confirmar()">
+            </p>
+        </div>
+
+        <div id="res1"></div>
+
+        <div>
+            <p>US$
+                <input type="number" name="txtdolar" id="txtdolar">
+                <input type="button" value="Converter para R$" onclick="convertR()">
+            </p>
+        </div>
+
+        <div id="res2"></div>
+
+        <div>
+            <p>R$
+                <input type="number" name="txtreal" id="txtreal">
+                <input type="button" value="Converter para US$" onclick="convertD()">
+            </p>
+        </div>
+
+        <div id="res3"></div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
