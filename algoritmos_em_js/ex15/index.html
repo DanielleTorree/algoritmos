@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição Sindical</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Eleição Sindical</h1>
+    </header>
+    <section>
+        <div>
+            <p style="text-align: center;"><strong>Quantidade de votos</strong></p>
+            <p>Candidato A:
+                <input type="number" name="txta" id="txta">
+            </p>
+            <p>Candidato B:
+                <input type="number" name="txtb" id="txtb">
+            </p>
+            <p>Candidato C:
+                <input type="number" name="txtc" id="txtc">
+            </p>
+            <p>Voto Nulos: 
+                <input type="number" name="txtnulo" id="txtnulo">
+            </p>
+            <p>Voto em Branco:
+                <input type="number" name="txtbranco" id="txtbranco">
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
