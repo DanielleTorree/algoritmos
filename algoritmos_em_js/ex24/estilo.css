@@ -1,0 +1,37 @@
+body{
+    font: normal 10pt Arial;
+    background-color: rgb(238, 238, 171);
+}
+header{
+    text-align: center;
+    color:rgba(100, 9, 143, 0.774);
+}
+section{
+    background-color: rgba(255, 255, 255, 0.884);
+    padding: 15px;
+    border-radius: 15px;
+    margin: auto;
+    width: 500px;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    color:rgba(100, 9, 143, 0.774);
+}
+.btncalc{
+    width: 100px;
+    height: 25px;
+    background-color: rgba(101, 9, 143, 0.616);
+    color: white;
+    border: 30px;
+    border-radius: 10px;
+}
+.btncalc:hover{
+    width: 100px;
+    height: 25px;
+    background-color: rgba(101, 9, 143, 0.527);
+    color: white;
+    border: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
