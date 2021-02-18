@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>NOME E SEXO</title>
+</head>
+<body>
+    <header>
+        <h1>NOME E SEXO</h1>
+    </header>
+    <section>
+        <div>
+            <p>Nome: 
+                <input type="text" name="txtnome" id="txtnome" placeholder="Digite seu nome aqui" maxLength="100">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" value="f" id="fem" checked>
+                <label for="fem">Femenino</label>
+                <input type="radio" name="radsex" value="m" id="mas">
+                <label for="mas">Masculino</label>
+                <p>
+                    <input type="button" value="Enviar" onclick="enviar()">
+                </p>
+        </div>
+        <div id="res"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
