@@ -8,7 +8,6 @@ function executar(){
        
        grao = grao + quadro
        
-       
        quadro = quadro * 2
 
        res.innerHTML += `${grao} <br>`
