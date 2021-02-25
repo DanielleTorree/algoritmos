@@ -7,7 +7,7 @@ function executar(){
     for(var c = 1; c <= 10; c++){
         var n = window.prompt('Digite um número: ')
 
-        soma = soma + n
+        soma = soma + Number(n)
         
     }
 
