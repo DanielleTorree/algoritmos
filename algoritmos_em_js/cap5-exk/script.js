@@ -5,11 +5,10 @@ function executar(){
     var quadro = 1
 
     for(var i = 1; i <= 64; i++){
-       
-       grao = grao + quadro
-       
-       quadro = quadro * 2
+        grao = grao + quadro
 
-       res.innerHTML += `${grao} <br>`
+        quadro = quadro * 2
+
+        res.innerHTML += `${grao} <br>`
     }
 }
