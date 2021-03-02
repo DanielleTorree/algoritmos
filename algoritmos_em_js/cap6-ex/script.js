@@ -6,11 +6,10 @@ function executar(){
     //4.5, 6.5, 8, 3.5, 6, 6.5, 6.5, 6
 
     for(var i = 0; i <= 7; i++){
-        //n.push( )
+        n.push( window.prompt('Digite a média do aluno: '))
         
 
-        soma = soma + Number(window.prompt('Digite a média do aluno: '))
-        
+        soma = soma + Number(n[i])
         console.log(soma)
     }
 
