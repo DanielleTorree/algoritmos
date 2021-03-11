@@ -1,17 +1,17 @@
 function executar(){
     var res = document.getElementById('res')
+    var array = []
+    var soma = 0
 
-    var array = [15, 20, 35, 40]
-    var total = 0
+    for(var i = 0; i <= 4; i++){
+        array.push(window.prompt('Digite um número: '))
 
-    res.innerHTML = `${array.length} <br>`
+        if(Number(array[i])%2!=0){
+            soma = soma + Number(array[i])
 
-    for(var i = 0; i <= 3 /*array.length*/; i++){
-        
-        if(array[i] % 2 != 0){
-            total = total + array[i]
+            console.log(soma)
         }
     }
 
-    res.innerHTML += total
+    res.innerHTML = ` Soma : ${soma}`
 }
