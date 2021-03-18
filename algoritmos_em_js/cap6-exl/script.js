@@ -1,13 +1,16 @@
-function executar(){    
+function executar(){
     var A = []
     var B = []
 
+    var AA = []
     for(var i = 0; i <= 4; i++){
         A.push(window.prompt('Digite um número: '))
 
-        //B.push(-A[i])
+        AA.push(parseInt(A[i]))
 
-        B.push(A[i] * (-1))
+        B.push(A[i] / 2)
     }
+    
+    console.log(AA)
     console.log(B)
-} 
+}
