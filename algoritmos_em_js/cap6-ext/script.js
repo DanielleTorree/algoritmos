@@ -5,12 +5,12 @@ function executar(){
 
     for(var i = 0; i <= 4; i++){
         if(i == 0){
-            A.push(window.prompt('Digite um número para A: '))
+            A.push(Number(window.prompt('Digite um número para A: ')))
         } else{
-            A.push(window.prompt('Digite outro número para A: '))
+            A.push(Number(window.prompt('Digite outro número para A: ')))
         }
 
-        if(Number(A[i])%2==0 || Number(A[i])%3==0){
+        if(A[i]%2==0 || A[i]%3==0){
             C.push(A[i])
         }
 
@@ -18,15 +18,17 @@ function executar(){
 
     for(var i = 0; i <= 4; i++){
         if(i == 0){
-            B.push(window.prompt('Digite um número para B: '))
+            B.push(Number(window.prompt('Digite um número para B: ')))
         } else{
-            B.push(window.prompt('Digite outro número para B: '))
+            B.push(Number(window.prompt('Digite outro número para B: ')))
         }
 
-        if(!(Number(B[i])%5==0)){
+        if(!(B[i]%5==0)){
             C.push(B[i])
         }
     }
 
+    console.log(A)
+    console.log(B)
     console.log(C)
 }
