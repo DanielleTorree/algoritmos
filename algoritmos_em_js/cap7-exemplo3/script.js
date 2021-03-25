@@ -19,6 +19,6 @@ function executar(){
         nome[i] = nome[min]
         nome[min] = temp
     }
-
+    -
     console.log(nome)
 }
