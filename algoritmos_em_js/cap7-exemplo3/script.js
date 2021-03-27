@@ -1,45 +1,28 @@
 function executar(){
-    var nome = []
-
-    for(var i = 0; i < 5; i++){
-        nome.push(window.prompt('Digite um nome: '))
-    }
-
-    for(var i = 0; i < nome.length; i++){
-        var min = i
-
-        for(var j = i + 1; j < nome.length; j++){
-
-            if(nome[min] > nome[j]){
-                min = j
-            }
-        }
-            
-        var temp = nome[i]
-        nome[i] = nome[min]
-        nome[min] = temp
-    }
+    var nome = ['Alex', 'Cicera', 'Danielle', 'Dayana', 'Jackson', 'Luiz', 'Marcela', 'Nicole', 'Pablo', 'Washington']
 
     do{
         var pergNome = window.prompt('Qual nome você deseja encontrar? ')
 
-        var inicio = 1
-        var fim =  5
-        var meio = (inicio + fim)/2
+        var comeco = 1
+        var final =  10
         var achaNome = false
 
-        while(inicio <= fim && achaNome == false){
-            if(pergNome == nome[parseInt(meio)]){
+        while(comeco <= final && achaNome == false){
+            var meio = (comeco + final)/2
+            var meioA = Math.floor(meio)
+            
+            if(pergNome == nome[meioA]){
                 achaNome = true
-            } else if(pergNome  < nome[parseInt(meio)]){
-                fim = meio - 1
+            } else if(pergNome  < nome[meioA]){
+                final = meioA - 1
             } else{
-                fim = meio + 1
+                comeco = meioA + 1
             }
         }
 
         if(achaNome == true){
-            window.alert(`O nome ${perNome} foi localizafo na posição ${meio}`)
+            window.alert(`O nome ${pergNome} foi localizado na posição ${Math.floor(meioA)}`)
         } else{
             window.alert(`O nome ${pergNome} não foi localizado`)
         }
@@ -47,4 +30,7 @@ function executar(){
         var resp = window.prompt('Deseja continuar? [sim/não]')
 
     } while(resp == 'sim')
+
+    console.log(nome)
+
 }
