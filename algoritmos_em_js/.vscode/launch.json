@@ -7,7 +7,7 @@
         {
             "type": "pwa-node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "cap7-exemplo6",
             "skipFiles": [
                 "<node_internals>/**"
             ],
