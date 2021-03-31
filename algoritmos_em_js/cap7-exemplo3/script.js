@@ -1,24 +1,38 @@
 function executar(){
-    var nome = []
+    var nome = ["Alex", "Beatriz", "Cicera", "Danielle", "Elaine", "Fabiana", "Giovana", "Heloisa", "Ingrid", "Julia"];
 
-    for(var i = 0; i < 5; i++){
-        nome.push(window.prompt('Digite um nome: '))
-    }
+    do{
+        var pergNome = window.prompt("Você deseja procurar qual nome? ");
 
-    for(var i = 0; i < nome.length; i++){
-        var min = i
+        var comeco = 1;
+        var final = 10;
+        var achaNome = false;
 
-        for(var j = i + 1; j < nome.length; j++){
+        while(comeco <= final && achaNome == false){
+            var meio = (comeco + final)/2;
+            var meioNumInt = Math.floor(meio);
 
-            if(nome[min] > nome[j]){
-                min = j
+            console.log("começo " + comeco);
+            console.log("final " + final);
+            console.log("meio " + meioNumInt)
+            
+            if(pergNome  == nome[meioNumInt]){
+                achaNome = true;
+            } else if(pergNome < nome[meioNumInt]){
+                final = meioNumInt - 1
+            } else{
+                comeco = meioNumInt + 1
             }
         }
-            
-        var temp = nome[i]
-        nome[i] = nome[min]
-        nome[min] = temp
-    }
-    -
-    console.log(nome)
+
+        if(achaNome == true){
+            window.alert(`O nome ${pergNome} foi encontrado no índice ${meioNumInt}!`)
+        } else{
+            window.alert(`O nome ${pergNome} não foi encontrado!`)
+        }
+
+        alert("ATENÇÃO!!!")
+        var resposta = window.prompt("Você deseja continuar? [Sim/Não]")
+    }while(resposta == "sim")
+
 }
