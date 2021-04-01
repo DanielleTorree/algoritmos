@@ -28,14 +28,21 @@ function executar(){
         
         var pergNum = window.prompt("Entre o número a ser pesquisado: ");
         var achaNum = false;
+        var i = 0;
 
         while(i < 5 && achaNum == false){
-            if(pergNum == C[i]){
-                achaNum == true;
+            if(pergNum ==  C[i]){
+                achaNum = true;
+            } else{
+                i++
             }
-            i++
         }
 
+        if(achaNum == true){
+            window.alert(`O número ${pergNum} foi encontrado na posição ${i}`)
+        } else{
+            window.alert(`O número ${pergNum} não foi encontrado`)
+        }
 
         var perg = window.prompt("Deseja continuar? [Sim/Não]");
     } while(perg == "sim" || perg == "Sim")
