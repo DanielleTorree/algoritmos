@@ -1,6 +1,3 @@
-/*
-Consertar esse algoritmo
-
 function executar(){
     var A = []
     var B = []
@@ -44,15 +41,14 @@ function executar(){
 
     do{
         window.alert('Faremos uma pesquisa binária neste algoritmo')
-        var pergNum = window.prompt('Entre o número a ser pesquisado: ')
+        var pergNum = Number(window.prompt('Entre o número a ser pesquisado: '))
 
-        var i = 0
         var comeco = 0
-        var final = 50
+        var final = 20
         var achaNum = false
 
         while(comeco <= final && achaNum == false){
-            var meio = (comeco + final)/2 
+            var meio = parseInt((comeco + final)/2) 
             
             if(C[meio] == pergNum){
                 achaNum = true
@@ -72,4 +68,3 @@ function executar(){
         var perg = window.prompt('Você deseja continuar? [sim/não]')
     } while(perg == 'sim')
 }
-*/
