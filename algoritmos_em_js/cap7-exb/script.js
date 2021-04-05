@@ -1,11 +1,9 @@
-/*Consertar algoritmo*/
-
 function executar(){
     var A = [];
     var B= [];
 
     for(var i = 0; i < 8; i++){
-        let numero = Number(window.prompt(i == 0 ? 'Digite um número' : 'Digite outro número: '));
+        var numero = Number(window.prompt(i == 0 ? 'Digite um número' : 'Digite outro número: '));
         A.push(numero);
 
         B.push(A[i]*5);
@@ -15,6 +13,9 @@ function executar(){
     console.log(`Array B (desordenado) ${B}`);
 
     for(var i = 0; i < 8; i++){
+
+        var x = 0
+
         for(var j = i + 1; j < 8; j++){
             if(B[i] > B[j]){
                 x = B[i];
@@ -29,27 +30,27 @@ function executar(){
     do{
         var pergNum = Number(window.prompt('Entre o número a ser pesquisado: '));
         
-        var achaNum = false; 
         var inicio = 0;
         var fim = 8;
+        var achaNum = false; 
 
         while(inicio <= fim && achaNum == false){
             var meio = parseInt((inicio + fim)/2);
 
-            console.log(meio)
-
-            if(pergNum == B[i]){
-                achaNum = true;
-            } else if(pergNum > B[i]){
+            if(pergNum == B[meio]){
+                achaNum = true
+            } else if(pergNum > B[meio]){
                 inicio = meio + 1
             } else{
-                final = meio - 1
+                fim = meio - 1
             }
         }
 
-        let mostraNum = achaNum ? ` número ${pergNum} foi encontrado na posição ${meio}` : ` número ${pergNum} não foi encontrado`
-
-        window.alert(mostraNum);
+        if(achaNum == true){
+            window.alert(`número ${pergNum} foi encontrado na posição ${meio}`);
+        } else{
+            window.alert(`número ${pergNum} não foi encontrado`);
+        }
 
         var perg = window.prompt('Quer continuar? [sim/não]')
     } while(perg == 'sim')
