@@ -17,8 +17,9 @@ function executar(){
         var achaNum = false;
         var i = 0;
 
-        while((!achaNum) && i < B.length - 1){
-            
+        //(!achaNum == não acha número)
+
+        while((!achaNum) && i < B.length - 1){    
             if(pergNum == B[i]){
                 achaNum = true;
             } else{
