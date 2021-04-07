@@ -12,6 +12,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\cap7-exemplo6\\script.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "cap7-exj",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\cap7-exj\\script.js"
         }
     ]
 }
